@@ -1,5 +1,5 @@
 $( document ).ready(function(){
-    
+    let $studentname = $('h3');
     //to get the length of li 
     let $studentlist = $('.student-list li').length;
     
@@ -32,12 +32,10 @@ $( document ).ready(function(){
     let $endingrange = $b*10;
     //subtracting with 10 so that each of the page can only have 10 students
     let $startrange = $endingrange - 10;
-    //clicking on each of the link would hide all the li (students list)can will only dislplay the range of students approiate to this particular pagination link
+    //clicking on each of the link would hide all the li (students list)and will only dislplay the range of students appropiate to this particular pagination link
     $('.student-list li').hide();
     $('.student-list li').slice($startrange,$endingrange).show();
         
         
+    });
 });
-    
-});
-
